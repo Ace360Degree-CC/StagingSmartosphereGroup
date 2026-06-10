@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, Network as NetworkIcon, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import GroupHeader from "@/components/group/GroupHeader";
 import GroupFooter from "@/components/group/GroupFooter";
+import RequestDemoModal from "@/components/RequestDemoModal";
 
 const organisations = [
   {
@@ -57,6 +59,8 @@ const organisations = [
 ];
 
 const Network = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <GroupHeader />
@@ -202,18 +206,19 @@ const Network = () => {
               Whether you&apos;re exploring innovation opportunities, technical challenges, or strategic initiatives,
               we&apos;d be glad to start a conversation.
             </p>
-            <Link
-              to="/contact"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="mt-10 group inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_30px_hsl(350_72%_50%/0.45)]"
               style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
             >
               Contact Smartosphere Group
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </Link>
+            </button>
           </motion.div>
         </div>
       </section>
 
+      <RequestDemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <GroupFooter />
     </div>
   );
