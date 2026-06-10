@@ -5,6 +5,7 @@ const entities = [
   { label: "Smartosphere Capital LLC", href: "/capital" },
   { label: "Smartosphere Technicalities INC", href: "/technicalities" },
   { label: "Smartosphere Solutions LLP", href: "/solutions-llp" },
+  { label: "Network", href: "/network" },
 ];
 
 const GroupFooter = () => {

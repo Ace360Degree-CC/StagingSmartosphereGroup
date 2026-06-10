@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Capital", href: "/capital" },
   { label: "Technology", href: "/technicalities" },
   { label: "Solutions", href: "/solutions-llp" },
+  { label: "Network", href: "/network" },
 ];
 
 const GroupHeader = () => {

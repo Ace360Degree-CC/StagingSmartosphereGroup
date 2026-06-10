@@ -251,6 +251,79 @@ const GroupHome = () => {
         </div>
       </section>
 
+      {/* Network */}
+      <section className="py-24 lg:py-32 border-t border-border/50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Network</p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
+              Organisations Connected Through
+              <br />
+              Innovation &amp; Technology
+            </h2>
+            <div className="mt-6 space-y-4 text-base lg:text-lg text-body leading-relaxed">
+              <p>
+                SmartoSphere Group has worked with, collaborated with, supported, or engaged with organisations across
+                technology, engineering, infrastructure, research, and innovation initiatives.
+              </p>
+              <p>
+                These relationships represent a diverse network of entities connected through shared objectives,
+                specialised expertise, and real-world execution.
+              </p>
+            </div>
+          </motion.div>
+          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+            {[
+              { name: "Innovative Billboards", monogram: "IB", logo: "/network logos/innovativebillboards.avif" },
+              { name: "TECHLok", monogram: "TL", logo: "/network logos/techlok-logo.webp" },
+              { name: "Pointe Angels", monogram: "PA", logo: "/network logos/pointeangels.png" },
+              { name: "LightHanded Enterprises", monogram: "LH", logo: "/network logos/Lighthanded.png" },
+              { name: "mQrg", monogram: "mQ", logo: "/network logos/logo-mq.png" },
+              { name: "BARC", monogram: "BARC", logo: "/network logos/BARC-Logo.png" },
+              { name: "Wherabouts", monogram: "Wa", logo: "/network logos/wherabouts.svg" },
+            ].map((o, i) => (
+              <motion.div
+                key={o.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: i * 0.05 }}
+                className="group relative rounded-xl p-6 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden text-center"
+              >
+                <div
+                  className="absolute -top-20 -right-20 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
+                  style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 70%)" }}
+                />
+                <div className="relative">
+                  <div className="flex items-center justify-center h-16 mb-3 transition-all">
+                    {o.logo ? (
+                      <img src={o.logo} alt={o.name} className={`max-h-full max-w-[80%] object-contain ${o.invert ? 'invert' : ''}`} />
+                    ) : (
+                      <span className="font-heading font-bold text-xl text-body group-hover:text-accent transition-colors tracking-wide">
+                        {o.monogram}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-xs font-medium text-body group-hover:text-heading transition-colors leading-snug">
+                    {o.name}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link
+              to="/network"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_30px_hsl(350_72%_50%/0.45)]"
+              style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
+            >
+              Explore Our Network
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* One Vision. Multiple Capabilities. */}
       <section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
         <div className="absolute inset-0 -z-10 opacity-60"

@@ -9,6 +9,7 @@ import Technicalities from "./pages/Technicalities";
 import SolutionsLLP from "./pages/SolutionsLLP";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import Network from "./pages/Network";
 import NotFound from "./pages/NotFound";
 import { CustomCursor } from "./components/CustomCursor";
 import ScrollToTop from "./components/ScrollToTop";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/solutions-llp" element={<SolutionsLLP />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
+          <Route path="/network" element={<Network />} />
           {/* CATCH-ALL ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
