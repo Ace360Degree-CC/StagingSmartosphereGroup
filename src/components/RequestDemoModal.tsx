@@ -25,8 +25,8 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
     setErrorMessage("");
 
     try {
-      // Always point to the remote server for submissions
-      const url = "https://smartospheresolutions.com/admin/demo_submit.php";
+      // Always point to the remote cPanel server for submissions
+      const url = "https://api.smartospheresolutions.com/admin/demo_submit.php";
 
       const response = await fetch(url, {
         method: "POST",
