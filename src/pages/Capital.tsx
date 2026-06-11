@@ -418,7 +418,7 @@ const SmartosphereCapital = () => {
             <div className="grid md:grid-cols-3 gap-6 lg:gap-4 relative">
               {[
                 { name: "Capital", tag: "Strategic Participation", icon: Sparkles, active: true },
-                { name: "Technicalities", tag: "Strategic Direction", icon: Compass },
+                { name: "Technologies", tag: "Strategic Direction", icon: Compass },
                 { name: "Solutions", tag: "Engineering Execution", icon: GitBranch },
               ].map((node, i) => (
                 <div key={node.name} className="relative">
