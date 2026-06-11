@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Mail, Phone, Globe, FileText, X, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import Swal from "sweetalert2";
 
 const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
     try {
       const url = window.location.hostname === "localhost"
         ? "http://localhost/Smartosphere/admin/demo_submit.php"
-        : "/admin/demo_submit.php";
+        : "https://smartospheresolutions.com/admin/demo_submit.php";
 
       const response = await fetch(url, {
         method: "POST",
@@ -39,13 +40,23 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
       const data = await response.json();
 
       if (response.ok && data.success) {
-        setStatus("success");
         setFormData({
           fullName: "",
           email: "",
           phone: "",
           website: "",
           requirements: "",
+        });
+        setStatus("idle");
+        onClose();
+        
+        Swal.fire({
+          title: 'Thank You!',
+          text: 'Your request has been successfully submitted. An engineering specialist will reach out to you within 24 hours.',
+          icon: 'success',
+          confirmButtonColor: '#EC8209',
+          background: '#2B303B',
+          color: '#ffffff'
         });
       } else {
         setStatus("error");
@@ -341,19 +352,7 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
 
             {/* Body */}
             <div className="demo-modal-body">
-              {status === "success" ? (
-                <div className="demo-success-container">
-                  <CheckCircle2 size={56} className="demo-success-icon" />
-                  <h4 className="demo-success-title">Thank You!</h4>
-                  <p className="demo-success-desc">
-                    Your request has been successfully submitted. An engineering specialist will reach out to you within 24 hours.
-                  </p>
-                  <button onClick={onClose} className="demo-submit-btn">
-                    Done
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="demo-modal-form">
+              <form onSubmit={handleSubmit} className="demo-modal-form">
                   {status === "error" && (
                     <div className="demo-error-container">
                       <AlertCircle size={20} className="flex-shrink-0" />
@@ -464,7 +463,6 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                     )}
                   </button>
                 </form>
-              )}
             </div>
           </motion.div>
         </div>
