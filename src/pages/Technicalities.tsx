@@ -83,25 +83,25 @@ const SmartosphereTechnicalities = () => {
             >
               <Sparkles className="w-3.5 h-3.5 text-accent" />
               <span className="text-xs font-medium tracking-wider uppercase text-body">
-                Smartosphere Ecosystem · Technicalities
+                Smartosphere Ecosystem · Technologies
               </span>
             </Link>
             <h1 className="font-heading text-4xl lg:text-6xl font-bold text-heading leading-[1.05] tracking-tight">
-              Strategic Technology
+              Smartosphere
               <br />
               <span
                 className="bg-clip-text text-transparent"
                 style={{ backgroundImage: "linear-gradient(120deg, hsl(32 93% 55%), hsl(350 72% 55%))" }}
               >
-                Direction
+                Technologies INC
               </span>
             </h1>
             <p className="mt-5 text-lg lg:text-xl font-light text-body tracking-wide max-w-xl">
-              Planning technology that scales.
+              Simplifying Complexity. Empowering Growth.
             </p>
             <p className="mt-8 text-base lg:text-lg text-body leading-relaxed max-w-xl">
-              Technology decisions influence scalability, security, and long-term growth. Smartosphere Technologies
-              supports organisations through strategic consulting and technical guidance.
+              Guiding innovators through complex technical landscapes with precise, enterprise-grade
+              technology strategy.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <button
@@ -406,8 +406,8 @@ const SmartosphereTechnicalities = () => {
                   <Wrapper
                     {...wrapperProps}
                     className={`block relative rounded-2xl p-8 border backdrop-blur-sm overflow-hidden transition-all ${node.active
-                        ? "border-accent/60 bg-surface-elevated"
-                        : "border-border bg-surface-elevated/50 hover:border-accent/40"
+                      ? "border-accent/60 bg-surface-elevated"
+                      : "border-border bg-surface-elevated/50 hover:border-accent/40"
                       }`}
                     style={
                       node.active

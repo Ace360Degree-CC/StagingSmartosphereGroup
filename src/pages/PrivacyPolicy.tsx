@@ -1,9 +1,9 @@
 import LegalPageLayout from "@/components/LegalPageLayout";
 
 const contact = {
-  company: "Smartosphere Solutions LLP",
-  email: "boa@smartospheregroup.com",
-  website: "https://smartospheresolutions.com",
+  company: "Smartosphere Group",
+  email: "info@smartospheregroup.com",
+  website: "https://www.smartospheregroup.com",
 };
 
 const sections = [

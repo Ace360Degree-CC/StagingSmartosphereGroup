@@ -25,23 +25,23 @@ import GroupFooter from "@/components/group/GroupFooter";
 const interests = [
   {
     icon: Cpu,
-    title: "Technology Ventures",
-    desc: "Early and growth-stage ventures developing differentiated technology with real engineering depth.",
+    title: "Commercializing Deep Tech",
+    desc: "Engineering-heavy ventures often struggle to secure capital from investors who don’t understand their tech. We provide the targeted capital participation and technical patience required to scale complex, differentiated technology into a resilient business.",
   },
   {
     icon: Layers,
-    title: "Product Innovation",
-    desc: "Initiatives translating novel ideas into deployable, manufacturable, and scalable products.",
+    title: "Taking Blueprints to Market",
+    desc: "A great prototype is not a market-ready product. We back initiatives focused on translating novel ideas into stable, manufacturable, and deployable products, ensuring your engineering stands up to real-world demands.",
   },
   {
     icon: Wrench,
-    title: "Engineering-Driven Development",
-    desc: "Teams where engineering rigour shapes direction — not retrofitted around a marketing thesis.",
+    title: "Protecting Technical Integrity",
+    desc: "We don't force technical teams to compromise their roadmap for a short-term marketing thesis. We back teams where engineering rigor shapes the business direction, protecting your technical integrity while driving strategic growth.",
   },
   {
     icon: Atom,
-    title: "Emerging Technologies",
-    desc: "Domains where applied research is approaching real-world deployment readiness.",
+    title: "Bridging R&D and Reality",
+    desc: "Moving applied research out of the lab and into commercial deployment is incredibly high-risk. We step in right at this critical transition point, providing the ecosystem resources needed to turn complex research into scalable, real-world deployment.",
   },
 ];
 
@@ -127,11 +127,11 @@ const SmartosphereCapital = () => {
               </span>
             </h1>
             <p className="mt-5 text-lg lg:text-xl font-light text-body tracking-wide max-w-xl">
-              Supporting innovation through strategic capital participation.
+              Funding the Vision. Empowering Innovation at Scale.
             </p>
             <p className="mt-8 text-base lg:text-lg text-body leading-relaxed max-w-xl">
-              Innovation often moves faster than available resources. Smartosphere Capital explores opportunities where
-              strategic participation may support promising technology and scalable innovation.
+              Transforming breakthrough ideas into resilient enterprises by pairing targeted capital
+              participation with the long-term strategic growth needed to empower the innovator.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <button
@@ -231,9 +231,9 @@ const SmartosphereCapital = () => {
             transition={{ duration: 0.6 }}
             className="lg:col-span-4"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Role</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Role</p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-heading leading-tight">
-              Enabling innovation, not transacting around it.
+              Empowering Innovation, Not Transacting Around It.
             </h2>
           </motion.div>
           <motion.div
@@ -244,21 +244,26 @@ const SmartosphereCapital = () => {
             className="lg:col-span-8 space-y-5 text-lg text-body leading-relaxed"
           >
             <p>
-              Smartosphere Capital exists to enable innovation — supporting ventures whose technical direction and
-              long-term potential warrant aligned participation. The intent is not to operate as a conventional
-              investment vehicle, but as a participant within a wider engineering and innovation ecosystem.
+              Meaningful innovation is rarely linear—it is built across years of disciplined engineering, refined
+              direction, and the quiet conviction to continue when outcomes are uncertain. Smartosphere
+              Capital exists to provide that exact conviction, supporting ventures whose technical depth and
+              long-term potential warrant deeply aligned participation. Our intent is not to operate as a
+              conventional, passive investment vehicle, but as an active partner committed to building resilient
+              enterprises within a wider engineering and innovation ecosystem.
             </p>
             <p>
-              Capital, on its own, is rarely the differentiator. What changes outcomes is capital paired with
-              technical understanding, operational clarity, and access to the right execution capability. Smartosphere
-              Capital is positioned to provide that alignment through the broader Smartosphere ecosystem.
+              Capital, on its own, is rarely the differentiator. What truly changes outcomes and drives
+              innovation at scale is capital explicitly paired with strategic technical clarity, long-term growth
+              participation, and direct access to elite execution capabilities. Smartosphere Capital is uniquely
+              positioned to fund the vision and deliver this foundational alignment through the broader
+              Smartosphere network.
             </p>
           </motion.div>
         </div>
-      </section>
+      </section >
 
       {/* Perspective — editorial */}
-      <section id="perspective" className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
+      {/* < section id="perspective" className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden" >
         <div
           className="absolute inset-0 -z-10 opacity-50"
           style={{ background: "radial-gradient(ellipse at 70% 30%, hsl(350 72% 18% / 0.5) 0%, transparent 60%)" }}
@@ -289,10 +294,10 @@ const SmartosphereCapital = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section > */}
 
       {/* Areas of Interest */}
-      <section className="py-24 lg:py-32 border-t border-border/50">
+      < section className="py-24 lg:py-32 border-t border-border/50" >
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -301,9 +306,9 @@ const SmartosphereCapital = () => {
             transition={{ duration: 0.6 }}
             className="max-w-2xl"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Areas of Interest</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Focus: Areas of Interest</p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              Where we focus attention.
+              Aligning Capital with Complex Execution
             </h2>
           </motion.div>
 
@@ -337,10 +342,10 @@ const SmartosphereCapital = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Selective Participation — process */}
-      <section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
+      {/* < section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden" >
         <div
           className="absolute inset-0 -z-10 opacity-60"
           style={{ background: "radial-gradient(ellipse at 20% 80%, hsl(350 72% 18% / 0.4) 0%, transparent 65%)" }}
@@ -386,10 +391,10 @@ const SmartosphereCapital = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section > */}
 
       {/* Ecosystem Integration */}
-      <section className="py-24 lg:py-32 border-t border-border/50">
+      {/* < section className="py-24 lg:py-32 border-t border-border/50" >
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -469,10 +474,10 @@ const SmartosphereCapital = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section > */}
 
       {/* Who May Benefit */}
-      <section className="py-24 lg:py-32 border-t border-border/50">
+      {/* < section className="py-24 lg:py-32 border-t border-border/50" >
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -508,10 +513,10 @@ const SmartosphereCapital = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section > */}
 
       {/* Closing */}
-      <section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden">
+      < section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden" >
         <div className="absolute inset-0 -z-10">
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-25 blur-3xl"
@@ -558,11 +563,11 @@ const SmartosphereCapital = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section >
 
       <RequestDemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <GroupFooter />
-    </div>
+    </div >
   );
 };
 

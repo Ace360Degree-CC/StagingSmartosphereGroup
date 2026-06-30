@@ -6,7 +6,7 @@ import RequestDemoModal from "../RequestDemoModal";
 
 const navLinks = [
   { label: "Capital", href: "/capital" },
-  { label: "Technology", href: "/technicalities" },
+  { label: "Technologies", href: "/technologies" },
   { label: "Solutions", href: "/solutions-llp" },
   { label: "Network", href: "/network" },
 ];

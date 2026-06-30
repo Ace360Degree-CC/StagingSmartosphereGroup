@@ -10,25 +10,25 @@ const entities = [
   {
     icon: Banknote,
     name: "Smartosphere Capital LLC",
-    tag: "Capital Participation",
+    tag: "Funding the Vision. Empowering Innovation at Scale.",
     summary:
-      "Supporting innovation through strategic participation and growth-oriented opportunities.",
+      "Transforming breakthrough ideas into resilient enterprises by pairing targeted capital participation with the long-term strategic growth needed to empower the innovator.",
     cta: "Explore Smartosphere Capital",
     href: "/capital",
   },
   {
     icon: Compass,
     name: "Smartosphere Technologies INC",
-    tag: "Technical Direction",
-    summary: "Strategic technology direction for complex innovation.",
+    tag: "Simplifying Complexity. Empowering Growth.",
+    summary: "Guiding innovators through complex technical landscapes with precise, enterprise-grade technology strategy.",
     cta: "Explore Smartosphere Technologies",
-    href: "/technicalities",
+    href: "/technologies",
   },
   {
     icon: Cpu,
     name: "Smartosphere Solutions LLP",
-    tag: "Engineering Execution",
-    summary: "Engineering practical technology for real-world challenges.",
+    tag: "Building with Precision. Empowering at Scale.",
+    summary: "Delivering the robust engineering execution required to turn technical blueprints into stable, market-ready products.",
     cta: "Explore Smartosphere Solutions LLP",
     href: "/solutions-llp",
   },
@@ -97,13 +97,13 @@ const GroupHome = () => {
               </span>
             </h1>
             <p className="mt-5 text-xl lg:text-2xl font-light text-body tracking-wide">
-              Supporting Innovation Through Capital, Strategy &amp; Engineering.
+              Empowering Innovation with Smartosphere Ecosystem
             </p>
             <p className="mt-8 text-base lg:text-lg text-body leading-relaxed max-w-xl">
-              Smartosphere Group brings together specialised entities focused on innovation enablement, technology
-              consulting, and engineering execution. Through a combination of strategic thinking, technical expertise,
-              and practical implementation, the group supports organisations, innovators, and technology-driven
-              initiatives across different stages of growth and development.
+              Smartosphere Group brings together specialized entities focused on capital investment,
+              technology consulting, and solutions execution. Through a combination of strategic capital,
+              technical expertise, and product development, the group supports organizations, innovators, and
+              technology-driven initiatives from incubation to market scale.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               {/* <Link
@@ -159,13 +159,13 @@ const GroupHome = () => {
               <motion.circle cx="200" cy="200" r="22" fill="hsl(220 15% 16%)" stroke="hsl(32 93% 55%)" strokeWidth="1.5"
                 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 1, delay: 0.8 }} style={{ transformOrigin: "200px 200px" }} />
               <text x="200" y="240" textAnchor="middle" fill="hsl(var(--heading))" className="font-heading" fontSize="13" fontWeight="600">
-                Clientele
+                Smartosphere Hub
               </text>
 
               {[
                 { cx: 200, cy: 80, label: "Capital" },
                 { cx: 80, cy: 300, label: "Technology" },
-                { cx: 320, cy: 300, label: "Engineering" },
+                { cx: 320, cy: 300, label: "Solutions" },
               ].map((n, i) => (
                 <g key={n.label}>
                   <circle cx={n.cx} cy={n.cy} r="40" fill="url(#gnodeGlow)" opacity="0.7" />
@@ -193,23 +193,88 @@ const GroupHome = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Vision</p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              A Shared Vision for Innovation
+              A Shared Vision for Empowering Innovation
             </h2>
             <div className="mt-8 space-y-5 text-lg text-body leading-relaxed">
               <p>
-                Innovation requires more than ideas. It requires the ability to evaluate opportunities, make informed
-                decisions, and execute effectively.
+                Innovation is hard. Building a technology startup is even harder. Success requires more than just
+                an idea; it demands the right capital, strategic technical clarity, and relentless execution.
               </p>
               <p>
-                Smartosphere Group was established around this belief, bringing together distinct capabilities that
-                address different aspects of innovation and technology development.
-              </p>
-              <p>
-                Each entity within the group focuses on a specific area of expertise while contributing to a broader
-                vision of supporting meaningful and sustainable innovation.
+                We engineered the Smartosphere Ecosystem specifically to change the odds for high-potential
+                initiatives. By uniting Smartosphere Capital, Technologies, and Solutions, we provide the
+                complete framework that helps innovators transition from survival to market scale.
+                Each of our specialised entities solves a critical piece of the innovation puzzle, giving you a dedicated partner
+                to help your vision flourish.
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* One Vision. Multiple Capabilities. */}
+      <section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 opacity-60"
+          style={{ background: "radial-gradient(ellipse at center, hsl(350 72% 18% / 0.4) 0%, transparent 70%)" }} />
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Group Model</p>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
+                One Vision.
+                <br />
+                Integrated Capabilities.
+              </h2>
+              <p className="mt-6 text-lg text-body leading-relaxed">
+                True technology innovation demands multiple disciplines that traditionally operate in isolation.
+                Smartosphere Group eliminates these silos by seamlessly uniting complementary capabilities
+                across investment participation, strategic guidance, and engineering execution.
+              </p>
+              <p className="mt-4 text-lg text-body leading-relaxed">
+                This structured ecosystem ensures that specialized expertise works in perfect alignment, creating
+                the continuity needed to transform ambitious opportunities into practical, market-scale
+                outcomes.
+              </p>
+              {/* <p className="mt-4 text-lg text-body leading-relaxed">
+                This structure enables focused expertise while maintaining a shared commitment to innovation, technology,
+                and practical outcomes.
+              </p> */}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative aspect-square max-w-[500px] mx-auto w-full"
+            >
+              {[
+                { label: "Capital", size: 100, delay: 0, color: "hsl(32 93% 48%)" },
+                { label: "Technologies", size: 75, delay: 0.15, color: "hsl(15 80% 50%)" },
+                { label: "Solutions", size: 50, delay: 0.3, color: "hsl(350 72% 50%)" },
+              ].map((ring) => (
+                <motion.div
+                  key={ring.label}
+                  initial={{ opacity: 0, scale: 0.6 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: ring.delay }}
+                  className="absolute inset-0 flex items-center justify-center"
+                  style={{ padding: `${(100 - ring.size) / 2}%` }}
+                >
+                  <div className="w-full h-full rounded-full border flex items-start justify-center pt-4 backdrop-blur-sm"
+                    style={{
+                      borderColor: ring.color,
+                      background: `radial-gradient(circle at center, ${ring.color}10 0%, transparent 70%)`,
+                      boxShadow: `inset 0 0 60px ${ring.color}15, 0 0 40px ${ring.color}20`,
+                    }}>
+                    <span className="text-xs font-heading font-bold uppercase tracking-[0.2em]" style={{ color: ring.color }}>
+                      {ring.label}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-3 h-3 rounded-full bg-accent shadow-[0_0_30px_hsl(32_93%_48%)]" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -258,20 +323,19 @@ const GroupHome = () => {
       <section className="py-24 lg:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Network</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Smartosphere Network</p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              Organisations Connected Through
-              <br />
-              Capital, Technology &amp; Engineering
+              Synergy in Motion.
             </h2>
             <div className="mt-6 space-y-4 text-base lg:text-lg text-body leading-relaxed">
               <p>
-                Smartosphere Group has worked with, collaborated with, supported, or engaged with organisations across
-                technology, engineering, infrastructure, research, and innovation initiatives.
+                Smartosphere Group sits at the intersection of industry-defining initiatives. We bridge the gap
+                between capital, technology, and real-world execution by collaborating with forward-thinking
+                organizations across technology, infrastructure, advanced research, and sustainable innovation.
               </p>
               <p>
-                These relationships represent a diverse network of entities connected through shared objectives,
-                specialised expertise, and real-world execution.
+                These relationships form a powerful, high-trust network bound by a shared commitment to
+                specialized expertise and market-scale success.
               </p>
             </div>
           </motion.div>
@@ -327,72 +391,10 @@ const GroupHome = () => {
         </div>
       </section>
 
-      {/* One Vision. Multiple Capabilities. */}
-      <section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-60"
-          style={{ background: "radial-gradient(ellipse at center, hsl(350 72% 18% / 0.4) 0%, transparent 70%)" }} />
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Group Model</p>
-              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-                One Vision.
-                <br />
-                Multiple Capabilities.
-              </h2>
-              <p className="mt-6 text-lg text-body leading-relaxed">
-                Technology innovation often involves multiple disciplines that traditionally operate independently.
-              </p>
-              <p className="mt-4 text-lg text-body leading-relaxed">
-                Smartosphere Group brings together complementary capabilities across investment participation, strategic
-                guidance, and engineering execution, creating an environment where opportunities can be explored with
-                greater alignment and continuity.
-              </p>
-              <p className="mt-4 text-lg text-body leading-relaxed">
-                This structure enables focused expertise while maintaining a shared commitment to innovation, technology,
-                and practical outcomes.
-              </p>
-            </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative aspect-square max-w-[500px] mx-auto w-full"
-            >
-              {[
-                { label: "Capital", size: 100, delay: 0, color: "hsl(32 93% 48%)" },
-                { label: "Strategy", size: 75, delay: 0.15, color: "hsl(15 80% 50%)" },
-                { label: "Engineering", size: 50, delay: 0.3, color: "hsl(350 72% 50%)" },
-              ].map((ring) => (
-                <motion.div
-                  key={ring.label}
-                  initial={{ opacity: 0, scale: 0.6 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: ring.delay }}
-                  className="absolute inset-0 flex items-center justify-center"
-                  style={{ padding: `${(100 - ring.size) / 2}%` }}
-                >
-                  <div className="w-full h-full rounded-full border flex items-start justify-center pt-4 backdrop-blur-sm"
-                    style={{
-                      borderColor: ring.color,
-                      background: `radial-gradient(circle at center, ${ring.color}10 0%, transparent 70%)`,
-                      boxShadow: `inset 0 0 60px ${ring.color}15, 0 0 40px ${ring.color}20`,
-                    }}>
-                    <span className="text-xs font-heading font-bold uppercase tracking-[0.2em]" style={{ color: ring.color }}>
-                      {ring.label}
-                    </span>
-                  </div>
-                </motion.div>
-              ))}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-3 h-3 rounded-full bg-accent shadow-[0_0_30px_hsl(32_93%_48%)]" />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* The Smartosphere Approach */}
-      <section className="py-24 lg:py-32 border-t border-border/50">
+      {/* <section className="py-24 lg:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Approach</p>
@@ -423,10 +425,10 @@ const GroupHome = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA */}
-      <section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden">
+      {/* <section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-25 blur-3xl"
             style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 60%)" }} />
@@ -464,7 +466,7 @@ const GroupHome = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       <RequestDemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <GroupFooter />

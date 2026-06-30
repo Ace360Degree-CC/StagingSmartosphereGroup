@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const entities = [
   { label: "Smartosphere Capital LLC", href: "/capital" },
-  { label: "Smartosphere Technologies INC", href: "/technicalities" },
+  { label: "Smartosphere Technologies INC", href: "/technologies" },
   { label: "Smartosphere Solutions LLP", href: "/solutions-llp" },
   { label: "Network", href: "/network" },
 ];
@@ -24,7 +24,7 @@ const GroupFooter = () => {
               </Link>
             </div>
             <p className="text-body text-sm leading-relaxed">
-              Supporting innovation through capital, strategy, and engineering.
+              Empowering Innovation with Smartosphere Ecosystem.
             </p>
           </div>
 
@@ -51,10 +51,10 @@ const GroupFooter = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 mt-0.5 text-primary shrink-0" />
                 <a
-                  href="mailto:boa@smartospheregroup.com"
+                  href="mailto:info@smartospheregroup.com"
                   className="text-sm text-body hover:text-primary transition-colors break-all"
                 >
-                  boa@smartospheregroup.com
+                  info@smartospheregroup.com
                 </a>
               </li>
               {/* <li className="flex items-start gap-3">
