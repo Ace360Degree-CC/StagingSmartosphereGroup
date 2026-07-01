@@ -5,46 +5,43 @@ import RequestDemoModal from "@/components/RequestDemoModal";
 import {
   ArrowRight,
   Sparkles,
-  Search,
-  Map,
-  Layers,
-  Compass,
   Target,
   Route as RouteIcon,
   Building2,
   Network,
-  GitBranch,
-  Rocket,
-  Users,
-  Briefcase,
-  Cpu,
   ShieldCheck,
+  LifeBuoy,
+  GitBranch,
 } from "lucide-react";
 import GroupHeader from "@/components/group/GroupHeader";
 import GroupFooter from "@/components/group/GroupFooter";
 
-const approach = [
-  { icon: Search, title: "Understand", desc: "Surface the real constraints, intent, and operating context before recommending direction." },
-  { icon: Target, title: "Strategise", desc: "Translate ambition into a clear, defensible technology strategy aligned to outcomes." },
-  { icon: Layers, title: "Architect", desc: "Define architecture and decisions that will hold as the system grows in scope and load." },
-  { icon: Compass, title: "Guide", desc: "Stay engaged through execution — clarifying trade-offs as the landscape evolves." },
-];
-
 const advisory = [
-  { icon: Target, title: "Technology Strategy", desc: "Long-form technology direction aligned to business intent, market reality, and operational maturity." },
-  { icon: RouteIcon, title: "Product & Roadmap Planning", desc: "Roadmaps grounded in feasibility — sequencing capability, dependencies, and risk against value." },
-  { icon: Building2, title: "Architecture Consulting", desc: "Reference architectures and design reviews that pre-empt scale, integration, and lifecycle issues." },
-  { icon: Network, title: "Scalability & Infrastructure Planning", desc: "Capacity, reliability, and infrastructure thinking before scale becomes a liability." },
-  { icon: ShieldCheck, title: "Technical Decision Support", desc: "Senior input on critical technical decisions — buy vs build, stack selection, vendor evaluation, and risk." },
-];
-
-const audience = [
-  { icon: Rocket, label: "Startups" },
-  { icon: Layers, label: "Product Teams" },
-  { icon: Network, label: "Technology Ventures" },
-  { icon: Cpu, label: "Engineering Organisations" },
-  { icon: Briefcase, label: "Leadership Teams" },
-  { icon: Users, label: "Founders & CTOs" },
+  {
+    icon: Target,
+    title: "Aligning Tech to Business (Technology Strategy)",
+    desc: "Too many technical roadmaps drift away from actual business realities. We provide long-form technology direction explicitly aligned to your business intent, market reality, and operational maturity, ensuring every technical asset drives strategic growth.",
+  },
+  {
+    icon: RouteIcon,
+    title: "De-risking the Product Timeline (Product & Roadmap Planning)",
+    desc: "Unrealistic roadmaps lead to missed deadlines and burned-out engineering teams. We construct product roadmaps deeply grounded in technical feasibility—carefully sequencing capability, dependencies, and hidden risks against actual commercial value.",
+  },
+  {
+    icon: Building2,
+    title: "Building for Scale and Longevity (Architecture Consulting)",
+    desc: "Fixing a broken architecture after deployment is incredibly slow and expensive. We deliver robust reference architectures and comprehensive design reviews that pre-empt scale, integration, and lifecycle issues before they compromise your product.",
+  },
+  {
+    icon: Network,
+    title: "Hardening Infrastructure Early (Scalability & Infrastructure Planning)",
+    desc: "Scaling a system under high user load exposes every hidden structural flaw. We step in with proactive capacity, reliability, and cloud infrastructure thinking to ensure your systems remain stable before scale ever becomes an operational liability.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Validating High-Stakes Technical Choices (Technical Decision Support)",
+    desc: "A wrong choice in software stack, vendor, or buy-vs-build strategy can lock an organization into technical debt for years. We provide senior, objective input on critical technical decisions —protecting your direction and mitigating long-term risk.",
+  },
 ];
 
 const SmartosphereTechnicalities = () => {
@@ -100,8 +97,7 @@ const SmartosphereTechnicalities = () => {
               Simplifying Complexity. Empowering Growth.
             </p>
             <p className="mt-8 text-base lg:text-lg text-body leading-relaxed max-w-xl">
-              Guiding innovators through complex technical landscapes with precise, enterprise-grade
-              technology strategy.
+              Guiding innovators through complex technical landscapes with precise, enterprise-grade technology strategy.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <button
@@ -112,12 +108,6 @@ const SmartosphereTechnicalities = () => {
                 Start a Strategic Discussion
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
-              <a
-                href="#approach"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors"
-              >
-                Our Approach
-              </a>
             </div>
           </motion.div>
 
@@ -191,16 +181,16 @@ const SmartosphereTechnicalities = () => {
         </div>
       </section>
 
-      {/* Why Technical Direction Matters */}
+      {/* Our Role */}
       <section className="py-24 lg:py-28 border-t border-border/50">
         <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-12 gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             transition={{ duration: 0.6 }} className="lg:col-span-4"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Why Direction</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Role</p>
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-heading leading-tight">
-              Complexity rewards clarity.
+              Simplifying Complexity, Not Adding to It.
             </h2>
           </motion.div>
           <motion.div
@@ -209,83 +199,35 @@ const SmartosphereTechnicalities = () => {
             className="lg:col-span-8 space-y-5 text-lg text-body leading-relaxed"
           >
             <p>
-              Modern technology environments are rarely defined by a single decision. They accumulate — vendor choices,
-              architectural shortcuts, deferred trade-offs, and parallel initiatives — until direction itself becomes
-              fragmented. The cost surfaces later, in scalability, integration, and the speed at which the organisation
-              can respond.
+              Modern technology environments are rarely defined by a single decision—they accumulate through architectural trade-offs, parallel initiatives, and deferred technical debt until direction itself becomes fragmented. Smartosphere Technologies exists to eliminate that drift. We provide innovators with the definitive technical clarity, enterprise-grade architecture strategy, and deep engineering alignment needed to build a defensible foundation for the next decade of business growth.
             </p>
             <p>
-              Strategic technical direction reduces that drift. It establishes the reasoning behind decisions, makes
-              constraints explicit, and gives leadership a defensible basis for the choices that shape the next several
-              years of the business.
+              Technology decisions made today dictate market agility tomorrow. What truly prevents fragmentation and empowers long-term growth is strategy explicitly paired with objective technical reasoning, clear operational constraints, and an exact understanding of down-line execution. Smartosphere Technologies is uniquely positioned to simplify your landscape and deliver this strategic direction as a core pillar of the broader Smartosphere network.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Our Approach */}
-      <section id="approach" className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-50"
-          style={{ background: "radial-gradient(ellipse at 70% 30%, hsl(350 72% 18% / 0.5) 0%, transparent 60%)" }} />
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.6 }} className="max-w-2xl"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Approach</p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              A disciplined path from intent to architecture.
-            </h2>
-          </motion.div>
-
-          <div className="mt-16 relative">
-            {/* Connecting line */}
-            <div className="hidden md:block absolute top-12 left-[8%] right-[8%] h-px"
-              style={{ background: "linear-gradient(90deg, transparent, hsl(32 93% 48% / 0.5), hsl(350 72% 50% / 0.5), transparent)" }} />
-            <div className="grid md:grid-cols-4 gap-8 md:gap-4 relative">
-              {approach.map((s, i) => (
-                <motion.div
-                  key={s.title}
-                  initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="relative text-center md:text-left"
-                >
-                  <div className="relative inline-flex md:flex items-center justify-center w-24 h-24 rounded-full border border-accent/40 bg-background mx-auto md:mx-0"
-                    style={{ boxShadow: "0 0 30px hsl(32 93% 48% / 0.2)" }}>
-                    <s.icon className="w-7 h-7 text-accent" />
-                    <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-surface-elevated border border-border flex items-center justify-center font-heading text-xs font-bold text-accent">
-                      {i + 1}
-                    </span>
-                  </div>
-                  <h3 className="mt-6 font-heading text-xl font-bold text-heading">{s.title}</h3>
-                  <p className="mt-3 text-sm text-body leading-relaxed max-w-xs mx-auto md:mx-0">{s.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Areas of Advisory */}
+      {/* Areas of Interest */}
       <section className="py-24 lg:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             transition={{ duration: 0.6 }} className="max-w-2xl"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Areas of Advisory</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Our Focus: Areas of Interest</p>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              Where we provide strategic depth.
+              Aligning Complex Architecture with Strategic Intent.
             </h2>
           </motion.div>
 
-          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="mt-16 flex flex-wrap justify-center gap-6 lg:gap-8">
             {advisory.map((a, i) => (
               <motion.div
                 key={a.title}
                 initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden"
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(50%-1rem)] group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden"
               >
                 <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
                   style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 70%)" }} />
@@ -303,202 +245,166 @@ const SmartosphereTechnicalities = () => {
         </div>
       </section>
 
-      {/* Bridging Business & Engineering */}
-      <section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 opacity-60"
-          style={{ background: "radial-gradient(ellipse at center, hsl(350 72% 18% / 0.4) 0%, transparent 70%)" }} />
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.6 }} className="max-w-2xl mb-16"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Bridge</p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              Where business vision meets engineering reality.
-            </h2>
-          </motion.div>
-
-          <div className="grid lg:grid-cols-[1fr_auto_1fr] gap-8 items-stretch">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="rounded-2xl p-8 lg:p-10 border border-border bg-surface-elevated/60 backdrop-blur-sm"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent/80 mb-3">Business Vision</p>
-              <h3 className="font-heading text-2xl font-bold text-heading leading-tight">Outcomes, scale, time-to-market.</h3>
-              <ul className="mt-6 space-y-3 text-sm text-body">
-                {["Strategic intent and growth thesis", "Market timing and positioning", "Capital and resource constraints", "Customer and operational outcomes"].map((x) => (
-                  <li key={x} className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />{x}</li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-              className="hidden lg:flex flex-col items-center justify-center gap-3"
-            >
-              <div className="w-px flex-1 bg-gradient-to-b from-transparent via-accent/50 to-transparent" />
-              <div className="w-14 h-14 rounded-full border border-accent/60 bg-background flex items-center justify-center"
-                style={{ boxShadow: "0 0 30px hsl(32 93% 48% / 0.3)" }}>
-                <GitBranch className="w-5 h-5 text-accent" />
-              </div>
-              <div className="w-px flex-1 bg-gradient-to-b from-transparent via-accent/50 to-transparent" />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="rounded-2xl p-8 lg:p-10 border border-border bg-surface-elevated/60 backdrop-blur-sm"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent/80 mb-3">Engineering Reality</p>
-              <h3 className="font-heading text-2xl font-bold text-heading leading-tight">Feasibility, architecture, risk.</h3>
-              <ul className="mt-6 space-y-3 text-sm text-body">
-                {["Technical feasibility and trade-offs", "Architecture and integration constraints", "Reliability, security, and lifecycle cost", "Team capability and delivery cadence"].map((x) => (
-                  <li key={x} className="flex gap-3"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />{x}</li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-
-          <motion.p
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-12 text-center text-base lg:text-lg text-body max-w-2xl mx-auto"
-          >
-            Technologies exists in the space between the two — translating intent into architecture, and constraints
-            into decisions leadership can defend.
-          </motion.p>
-        </div>
-      </section>
-
-      {/* Ecosystem Integration */}
+      {/* The Smartosphere Advantage */}
       <section className="py-24 lg:py-32 border-t border-border/50">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.6 }} className="max-w-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto text-center"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Ecosystem Integration</p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              The bridge between capital and execution.
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Smartosphere Advantage</p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight mb-6">
+              Strategic Direction Grounded in Execution.
             </h2>
-            <p className="mt-6 text-lg text-body leading-relaxed">
-              Technologies sits between Smartosphere Capital and Smartosphere Solutions — connecting strategic
-              participation to engineering execution through direction that is grounded in both.
+            <p className="text-lg text-body leading-relaxed mb-16">
+              Smartosphere Technologies does not deliver abstract strategy in a vacuum. Our insights are actively informed and reinforced by the broader Smartosphere ecosystem:
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="mt-16 grid md:grid-cols-3 gap-6 lg:gap-4 relative"
-          >
-            {[
-              { name: "Capital", tag: "Strategic Participation", icon: Sparkles, href: "/capital" },
-              { name: "Technologies", tag: "Strategic Direction", icon: Compass, active: true },
-              { name: "Solutions", tag: "Engineering Execution", icon: GitBranch, href: "/solutions" },
-            ].map((node, i) => {
-              const Wrapper: any = node.href ? Link : "div";
-              const wrapperProps = node.href ? { to: node.href } : {};
-              return (
-                <div key={node.name} className="relative">
-                  <Wrapper
-                    {...wrapperProps}
-                    className={`block relative rounded-2xl p-8 border backdrop-blur-sm overflow-hidden transition-all ${node.active
-                      ? "border-accent/60 bg-surface-elevated"
-                      : "border-border bg-surface-elevated/50 hover:border-accent/40"
-                      }`}
-                    style={
-                      node.active
-                        ? { boxShadow: "0 0 40px hsl(32 93% 48% / 0.2), inset 0 0 30px hsl(350 72% 40% / 0.1)" }
-                        : undefined
-                    }
-                  >
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="inline-flex items-center justify-center w-11 h-11 rounded-lg border border-accent/40 bg-background/60"
-                        style={{ boxShadow: "0 0 18px hsl(32 93% 48% / 0.2)" }}>
-                        <node.icon className="w-5 h-5 text-accent" />
-                      </div>
-                      <span className="font-heading text-xs font-bold text-accent/70 tracking-[0.2em]">0{i + 1}</span>
-                    </div>
-                    <h3 className="font-heading text-2xl font-bold text-heading">{node.name}</h3>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-wider text-accent/90">{node.tag}</p>
-                  </Wrapper>
-                  {i < 2 && (
-                    <div className="hidden md:flex absolute top-1/2 -right-3 -translate-y-1/2 z-10 w-6 h-6 rounded-full bg-background border border-accent/50 items-center justify-center">
-                      <ArrowRight className="w-3 h-3 text-accent" />
-                    </div>
-                  )}
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden text-left"
+            >
+              <div
+                className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
+                style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 70%)" }}
+              />
+              <div className="relative">
+                <div
+                  className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg border border-accent/40 bg-background/60"
+                  style={{ boxShadow: "0 0 22px hsl(32 93% 48% / 0.25)" }}
+                >
+                  <LifeBuoy className="w-5 h-5 text-accent" />
                 </div>
-              );
-            })}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Who We Work With */}
-      <section className="py-24 lg:py-32 border-t border-border/50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.6 }} className="max-w-2xl"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">Who We Work With</p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight">
-              Built for leaders making consequential decisions.
-            </h2>
-          </motion.div>
-
-          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {audience.map((a, i) => (
-              <motion.div
-                key={a.label}
-                initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="group flex items-center gap-4 p-6 rounded-xl border border-border bg-surface-elevated/40 hover:bg-surface-elevated hover:border-accent/40 transition-all"
-              >
-                <div className="shrink-0 w-11 h-11 rounded-lg flex items-center justify-center border border-accent/30 bg-background/60"
-                  style={{ boxShadow: "0 0 18px hsl(32 93% 48% / 0.2)" }}>
-                  <a.icon className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
+                <h3 className="font-heading text-xl font-bold text-heading leading-tight mb-3">
+                  Capital Aligned
+                </h3>
+                <p className="text-sm text-body leading-relaxed">
+                  We work in tight coordination with <strong className="text-white">Smartosphere Capital LLC</strong>, ensuring your technology roadmaps perfectly protect and accelerate strategic investments without forcing you to compromise technical integrity for short-term narratives.
+                </p>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden text-left"
+            >
+              <div
+                className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
+                style={{ background: "radial-gradient(circle, hsl(32 93% 40%) 0%, transparent 70%)" }}
+              />
+              <div className="relative">
+                <div
+                  className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg border border-accent/40 bg-background/60"
+                  style={{ boxShadow: "0 0 22px hsl(32 93% 48% / 0.25)" }}
+                >
+                  <GitBranch className="w-5 h-5 text-accent" />
                 </div>
-                <h3 className="font-heading font-semibold text-heading">{a.label}</h3>
-              </motion.div>
-            ))}
+                <h3 className="font-heading text-xl font-bold text-heading leading-tight mb-3">
+                  Execution Ready
+                </h3>
+                <p className="text-sm text-body leading-relaxed">
+                  Our reference architectures and technical designs transition seamlessly into full-scale production through <strong className="text-white">Smartosphere Solutions LLP</strong>, eliminating the friction, lost context, and structural drift that typically happens when handing blueprints off to outside engineering teams.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Closing */}
+      {/* Closing / Next Step */}
       <section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-25 blur-3xl"
-            style={{ background: "radial-gradient(circle, hsl(350 72% 38%) 0%, transparent 60%)" }} />
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-25 blur-3xl"
+            style={{ background: "radial-gradient(circle, hsl(350 72% 38%) 0%, transparent 60%)" }}
+          />
         </div>
-        <div className="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+        <div className="container mx-auto px-4 lg:px-8 text-center max-w-6xl">
           <motion.div
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-6">Next Step</p>
             <h2 className="font-heading text-4xl lg:text-6xl font-bold text-heading leading-tight">
-              Guidance Beyond
+              Strategy is Only
               <br />
-              <span className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(120deg, hsl(32 93% 55%), hsl(350 72% 55%))" }}>
-                Advice
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "linear-gradient(120deg, hsl(32 93% 55%), hsl(350 72% 55%))" }}
+              >
+                Half the Battle
               </span>
             </h2>
-            <p className="mt-8 text-lg lg:text-xl text-body leading-relaxed">
-              Technology consulting should create clarity and better decisions — not complexity.
+            <p className="mt-8 text-lg lg:text-xl text-body leading-relaxed max-w-3xl mx-auto">
+              Smartosphere Technologies sets the vector, but navigating the full lifecycle requires seamless movement from planning to execution. Explore the other pillars of our group model to see how we protect and build your vision:
             </p>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="mt-12 group inline-flex items-center gap-2 px-8 py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
-              style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
-            >
-              Talk to the Smartosphere Team
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </button>
+
+            <div className="mt-16 grid md:grid-cols-2 gap-6 lg:gap-8 text-left">
+              <div className="p-8 rounded-2xl border border-border bg-surface-elevated/40 backdrop-blur-sm hover:border-accent/40 transition-all flex flex-col h-full">
+                <h3 className="font-heading text-2xl font-bold text-heading mb-4 flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-accent shrink-0"></span>
+                  Smartosphere Capital LLC
+                </h3>
+                <p className="text-body leading-relaxed mb-8 flex-1">
+                  Transforming breakthrough ideas into resilient enterprises by pairing targeted capital participation with long-term strategic growth.
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    to="/capital"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors w-full justify-center"
+                  >
+                    Explore Smartosphere Capital
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="p-8 rounded-2xl border border-border bg-surface-elevated/40 backdrop-blur-sm hover:border-accent/40 transition-all flex flex-col h-full">
+                <h3 className="font-heading text-2xl font-bold text-heading mb-4 flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-accent shrink-0"></span>
+                  Smartosphere Solutions LLP
+                </h3>
+                <p className="text-body leading-relaxed mb-8 flex-1">
+                  Delivering the robust engineering execution required to turn technical blueprints into stable, market-ready products.
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    to="/solutions-llp"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors w-full justify-center"
+                  >
+                    Explore Smartosphere Solutions
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-20">
+              <p className="text-xl font-medium text-heading mb-8">
+                Ready to align your vision with our ecosystem?
+              </p>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="group inline-flex items-center gap-2 px-8 py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
+                style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
+              >
+                Discuss an Opportunity
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </button>
+            </div>
           </motion.div>
         </div>
       </section>

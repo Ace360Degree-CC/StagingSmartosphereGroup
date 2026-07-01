@@ -344,6 +344,86 @@ const SmartosphereCapital = () => {
         </div>
       </section >
 
+      {/* The Smartosphere Advantage */}
+      <section className="py-24 lg:py-32 border-t border-border/50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-4">The Smartosphere Advantage</p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-heading leading-tight mb-6">
+              The Smartosphere Advantage
+            </h2>
+            <p className="text-xl font-medium text-heading mb-4">
+              Capital Connected to Capability.
+            </p>
+            <p className="text-lg text-body leading-relaxed mb-16">
+              Participation by Smartosphere Capital is actively reinforced by our wider ecosystem. We don't just provide capital; we connect your funding directly to strategic direction through Smartosphere Technologies and elite execution through Smartosphere Solutions.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden text-left"
+            >
+              <div
+                className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
+                style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 70%)" }}
+              />
+              <div className="relative">
+                <div
+                  className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg border border-accent/40 bg-background/60"
+                  style={{ boxShadow: "0 0 22px hsl(32 93% 48% / 0.25)" }}
+                >
+                  <LifeBuoy className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-heading leading-tight mb-3">
+                  Development-Linked Support
+                </h3>
+                <p className="text-sm text-body leading-relaxed">
+                  Our participation is intentionally structured around real engineering milestones, technical progress, and operational readiness—not arbitrary financial cycles.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="group relative rounded-2xl p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden text-left"
+            >
+              <div
+                className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
+                style={{ background: "radial-gradient(circle, hsl(32 93% 40%) 0%, transparent 70%)" }}
+              />
+              <div className="relative">
+                <div
+                  className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg border border-accent/40 bg-background/60"
+                  style={{ boxShadow: "0 0 22px hsl(32 93% 48% / 0.25)" }}
+                >
+                  <Network className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-heading leading-tight mb-3">
+                  Ecosystem Integration
+                </h3>
+                <p className="text-sm text-body leading-relaxed">
+                  We selectively engage with ventures whose long-term direction aligns with the wider Smartosphere ecosystem, ensuring you have an immediate, structural advantage in technical execution.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Selective Participation — process */}
       {/* < section className="py-24 lg:py-32 border-t border-border/50 relative overflow-hidden" >
         <div
@@ -516,14 +596,14 @@ const SmartosphereCapital = () => {
       </section > */}
 
       {/* Closing */}
-      < section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden" >
+      <section className="py-28 lg:py-40 border-t border-border/50 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-25 blur-3xl"
             style={{ background: "radial-gradient(circle, hsl(350 72% 38%) 0%, transparent 60%)" }}
           />
         </div>
-        <div className="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+        <div className="container mx-auto px-4 lg:px-8 text-center max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -541,29 +621,66 @@ const SmartosphereCapital = () => {
                 Beginning
               </span>
             </h2>
-            <p className="mt-8 text-lg lg:text-xl text-body leading-relaxed">
-              See how Smartosphere Solutions LLP turns strategic participation into real-world engineering
-              execution — building the products and systems that innovation demands.
+            <p className="mt-8 text-lg lg:text-xl text-body leading-relaxed max-w-3xl mx-auto">
+              Smartosphere Capital provides the foundation, but scaling innovation requires a complete ecosystem. See how our specialized entities actively protect and accelerate your growth:
             </p>
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                to="/solutions-llp"
+
+            <div className="mt-16 grid md:grid-cols-2 gap-6 lg:gap-8 text-left">
+              <div className="p-8 rounded-2xl border border-border bg-surface-elevated/40 backdrop-blur-sm hover:border-accent/40 transition-all flex flex-col h-full">
+                <h3 className="font-heading text-2xl font-bold text-heading mb-4 flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-accent shrink-0"></span>
+                  Smartosphere Technologies INC
+                </h3>
+                <p className="text-body leading-relaxed mb-8 flex-1">
+                  Guiding you through complex landscapes with precise, enterprise-grade technology strategy.
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    to="/technologies"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors w-full justify-center"
+                  >
+                    Explore Smartosphere Technologies
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="p-8 rounded-2xl border border-border bg-surface-elevated/40 backdrop-blur-sm hover:border-accent/40 transition-all flex flex-col h-full">
+                <h3 className="font-heading text-2xl font-bold text-heading mb-4 flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-accent shrink-0"></span>
+                  Smartosphere Solutions LLP
+                </h3>
+                <p className="text-body leading-relaxed mb-8 flex-1">
+                  Delivering the robust engineering execution required to turn technical blueprints into stable, market-ready products.
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    to="/solutions-llp"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors w-full justify-center"
+                  >
+                    Explore Smartosphere Solutions
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-20">
+              <p className="text-xl font-medium text-heading mb-8">
+                Ready to align your vision with our ecosystem?
+              </p>
+              <button
+                onClick={() => setIsModalOpen(true)}
                 className="group inline-flex items-center gap-2 px-8 py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
                 style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
               >
-                Explore Smartosphere Solutions
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-heading text-sm font-semibold hover:border-accent/60 hover:text-accent transition-colors"
-              >
                 Discuss an Opportunity
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
           </motion.div>
         </div>
-      </section >
+      </section>
 
       <RequestDemoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <GroupFooter />
