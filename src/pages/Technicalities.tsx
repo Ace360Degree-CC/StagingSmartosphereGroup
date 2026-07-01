@@ -19,27 +19,27 @@ import GroupFooter from "@/components/group/GroupFooter";
 const advisory = [
   {
     icon: Target,
-    title: "Aligning Tech to Business (Technology Strategy)",
+    title: "Aligning Tech to Business",
     desc: "Too many technical roadmaps drift away from actual business realities. We provide long-form technology direction explicitly aligned to your business intent, market reality, and operational maturity, ensuring every technical asset drives strategic growth.",
   },
   {
     icon: RouteIcon,
-    title: "De-risking the Product Timeline (Product & Roadmap Planning)",
+    title: "De-risking the Product Timeline",
     desc: "Unrealistic roadmaps lead to missed deadlines and burned-out engineering teams. We construct product roadmaps deeply grounded in technical feasibility—carefully sequencing capability, dependencies, and hidden risks against actual commercial value.",
   },
   {
     icon: Building2,
-    title: "Building for Scale and Longevity (Architecture Consulting)",
+    title: "Building for Scale and Longevity",
     desc: "Fixing a broken architecture after deployment is incredibly slow and expensive. We deliver robust reference architectures and comprehensive design reviews that pre-empt scale, integration, and lifecycle issues before they compromise your product.",
   },
   {
     icon: Network,
-    title: "Hardening Infrastructure Early (Scalability & Infrastructure Planning)",
+    title: "Hardening Infrastructure Early",
     desc: "Scaling a system under high user load exposes every hidden structural flaw. We step in with proactive capacity, reliability, and cloud infrastructure thinking to ensure your systems remain stable before scale ever becomes an operational liability.",
   },
   {
     icon: ShieldCheck,
-    title: "Validating High-Stakes Technical Choices (Technical Decision Support)",
+    title: "Validating High-Stakes Technical Choices",
     desc: "A wrong choice in software stack, vendor, or buy-vs-build strategy can lock an organization into technical debt for years. We provide senior, objective input on critical technical decisions —protecting your direction and mitigating long-term risk.",
   },
 ];
@@ -291,7 +291,7 @@ const SmartosphereTechnicalities = () => {
                 </p>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}

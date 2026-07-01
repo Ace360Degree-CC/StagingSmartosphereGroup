@@ -51,7 +51,7 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
         
         Swal.fire({
           title: 'Thank You!',
-          text: 'Your request has been successfully submitted. An engineering specialist will reach out to you within 24 hours.',
+          text: 'Your request has been successfully submitted. Our Team will reach out to you within 24 hours.',
           icon: 'success',
           confirmButtonColor: '#EC8209',
           background: '#2B303B',
@@ -419,7 +419,7 @@ const RequestDemoModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                     <div className="demo-input-container">
                       <Globe size={16} className="demo-input-icon" />
                       <input
-                        type="url"
+                        type="text"
                         name="website"
                         value={formData.website}
                         onChange={handleChange}

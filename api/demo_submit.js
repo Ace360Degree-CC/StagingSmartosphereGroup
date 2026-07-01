@@ -46,7 +46,7 @@ export default async function handler(req, res) {
 
     // 1. Connect to MySQL Database
     const connection = await mysql.createConnection(dbConfig);
-    
+
     // Create table if not exists
     await connection.execute(`
       CREATE TABLE IF NOT EXISTS demo_requests (
@@ -89,13 +89,13 @@ export default async function handler(req, res) {
 
     // 4. Send Autoresponder to User
     await transporter.sendMail({
-      from: '"Smartosphere Solutions" <no-reply@smartospheresolutions.com>',
+      from: '"Smartosphere Group" <no-reply@smartospheresolutions.com>',
       to: email,
-      subject: 'Thank you for reaching out to Smartosphere Solutions',
+      subject: 'Thank you for reaching out to Smartosphere Group',
       html: `
         <p>Hi ${fullName},</p>
-        <p>Thank you for requesting a demo session with Smartosphere Solutions.</p>
-        <p>We have received your request and an engineering specialist will review your details and get back to you within 24 hours.</p>
+        <p>Thank you for reaching out to Smartosphere Group.</p>
+        <p>We have received your message and Our Team will review your message and get back to you within 24 hours.</p>
         <br/>
         <p>Best regards,</p>
         <p><strong>The Smartosphere Team</strong></p>
