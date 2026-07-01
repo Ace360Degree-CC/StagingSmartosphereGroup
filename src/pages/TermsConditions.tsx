@@ -30,7 +30,7 @@ const sections = [
   {
     title: "4. Intellectual Property",
     content: [
-      "All content on this website, including text, graphics, logos, images, designs, and layout, is the property of Smartosphere Solutions LLP or its licensors and is protected by applicable intellectual property laws.",
+      "All content on this website, including text, graphics, logos, images, designs, and layout, is the property of Smartosphere Group or its licensors and is protected by applicable intellectual property laws.",
       "You may not reproduce, distribute, modify, or republish any content from this website without prior written permission from Smartosphere.",
     ],
   },
@@ -49,7 +49,7 @@ const sections = [
   {
     title: "7. Limitation of Liability",
     content: [
-      "To the fullest extent permitted by law, Smartosphere Solutions LLP shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to: Use or inability to use the website, Reliance on information provided on the website, Errors, omissions, or inaccuracies in website content.",
+      "To the fullest extent permitted by law, Smartosphere Group shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to: Use or inability to use the website, Reliance on information provided on the website, Errors, omissions, or inaccuracies in website content.",
     ],
   },
   {
@@ -81,9 +81,9 @@ const sections = [
 const TermsConditions = () => (
   <LegalPageLayout
     title="Terms & Conditions"
-    intro="These Terms & Conditions ('Terms') govern your access to and use of the website operated by Smartosphere Solutions LLP ('Smartosphere', 'we', 'our', or 'us'). By accessing or using this website, you agree to be bound by these Terms. If you do not agree, please do not use the website."
+    intro="These Terms & Conditions ('Terms') govern your access to and use of the website operated by Smartosphere Group ('Smartosphere', 'we', 'our', or 'us'). By accessing or using this website, you agree to be bound by these Terms. If you do not agree, please do not use the website."
     sections={sections}
-    closingNote="Smartosphere Solutions LLP — Engineering Trust Through Transparent Terms."
+    closingNote="Smartosphere Group — Engineering Trust Through Transparent Terms."
     contact={contact}
   />
 );
